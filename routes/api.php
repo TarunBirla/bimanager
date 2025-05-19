@@ -9,6 +9,7 @@ use App\Http\Controllers\CreateRFQandPO;
 
 
 Route::post('/import-excel', [ExcelImportController::class, 'import']);
+Route::post('/rfqimport-excel', [ExcelImportController::class, 'rfqimport']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/forgot-password', [AuthController::class, 'sendResetLink']);
