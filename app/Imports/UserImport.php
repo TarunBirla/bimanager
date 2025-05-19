@@ -12,7 +12,7 @@ class UserImport implements ToModel
         return new User([
             'name'     => $row[0],
             'email'    => $row[1],
-            'password' => bcrypt($row[2]), // Only for example
+            'password' => "12345678", 
         ]);
     }
 }
